@@ -29,3 +29,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Comandos durante o projeto
 $ `sudo npm i -g @vue/cli`
+
+$ `vue add vuetify`
+
+> `> Default (recommended) `
+
+$ `vue add electron-builder`
+>`? Choose Electron Version`
+>  `^4.0.0 `
+> `❯ ^5.0.0` 
+
