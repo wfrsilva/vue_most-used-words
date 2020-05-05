@@ -1,5 +1,6 @@
 {
   "name": "vue_most-used-words",
+  "title": "Most Used Words - Vue",
   "version": "0.1.0",
   "private": true,
   "scripts": {
