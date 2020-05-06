@@ -13,7 +13,7 @@
       />
     </v-form>
 
-    <div class="pills">
+    <div clas="pills">
       <Pill v-for="word in groupedWords" :key="word.name" :name="word.name" :amount="word.amount" />
     </div>
   </v-container>
