@@ -42,6 +42,11 @@ $ vue add electron-builder
 > ❯ ^5.0.0 
 ```
 
+vue_most-used-words$ `npm run electron:serve`
+
+
+
+
 
 # Referencias
 - https://regex101.com/
