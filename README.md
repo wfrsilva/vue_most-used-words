@@ -43,3 +43,5 @@ $ vue add electron-builder
 ```
 
 
+# Referencias
+- https://regex101.com/
