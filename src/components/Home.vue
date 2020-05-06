@@ -27,21 +27,15 @@ export default {
   data: function() {
     return {
       files: [],
-      groupedWords: [
-        { name: "i", amount: 1234 },
-        { name: "you", amount: 900 },
-        { name: "he", amount: 853 },
-        { name: "me", amount: 999 },
-      ]
+      groupedWords: []
+
     };
   },
   methods: {
     processSubtitles() {
-      console.log(this.files);
-
-      ipcRenderer.send('process-subtitles', 'ping do Home process-subtitles')
+      ipcRenderer.send('process-subtitles', this.files)
       ipcRenderer.on('process-subtitles', (event, resp) => {
-        console.log(resp)
+        this.groupedWords = resp
       })
     }
   }
