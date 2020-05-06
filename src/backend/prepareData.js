@@ -9,6 +9,19 @@ module.exports = rows => {
                 .split(' ')
                 .map(word => word.toLowerCase())
                 .map(word => word.replace('"',''))
+                .map(word => word.replace('>>',''))
+                .map(word => word.replace('[',''))
+                .map(word => word.replace(']',''))
+                .map(word => word.replace(':',''))
+                .map(word => word.replace('♪',''))
+                .map(word => word.replace('<i',''))
+                .map(word => word.replace('i>',''))
+                .map(word => word.replace('</',''))
+                .map(word => word.replace('>',''))
+                .map(word => word.replace('"','')) //de novo
+                /*.map(word => word.replace(']',''))
+                .map(word => word.replace(']',''))
+                .map(word => word.replace(']',''))*/
 
             resolver(words)
             
@@ -26,5 +39,5 @@ function filterValidRow(row){
 }
 
 const removePunctuation = row => row.replace(/[,?!.-]/g, '')
-const removeTags = row => row.replace(/(<[^>]+)>/ig, '').trim()
+const removeTags = row => row.replace(/(<[^>]+)> /ig, '').trim()
 const mergeRows = (fullText, row) => `${fullText} ${row}`
