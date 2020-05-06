@@ -3,5 +3,5 @@ const { ipcMain } = require('electron')
 ipcMain.on('blabla', (event, arg) => {
     console.log(arg)
 
-    event.reply('blabla', 'pong do backend index')
+    event.reply('blublu', 'pong do backend index blu')
 })
