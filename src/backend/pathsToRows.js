@@ -8,6 +8,7 @@ module.exports = paths => {
                 .reduce((fullText, fileText)=> `${fullText}\n${fileText}`)
                 .split('\n')
             resolver(rows)
+            
         } catch (e) {
             reject(e)
         }
