@@ -49,4 +49,7 @@ vue_most-used-words$ `npm run electron:serve`
 
 
 # Referencias
+- https://vuejs.org/
+  - https://vuejs.org/v2/guide/
 - https://regex101.com/
+- https://jsfiddle.net/
