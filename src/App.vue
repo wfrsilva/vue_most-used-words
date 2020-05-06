@@ -11,14 +11,13 @@
 
 <script>
 import Home from "./components/Home";
-//import Pill from "./components/Pill";
+
 
 export default {
   name: "App",
 
   components: {
     Home,
-    //Pill,
   },
 
   data: () => ({
