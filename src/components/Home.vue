@@ -39,8 +39,8 @@ export default {
     processSubtitles() {
       console.log(this.files);
 
-      ipcRenderer.send('blabla', 'ping do Home bla')
-      ipcRenderer.on('blublu', (event, resp) => {
+      ipcRenderer.send('process-subtitles', 'ping do Home process-subtitles')
+      ipcRenderer.on('process-subtitles', (event, resp) => {
         console.log(resp)
       })
     }

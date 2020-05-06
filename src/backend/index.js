@@ -1,7 +1,7 @@
 const { ipcMain } = require('electron')
 
-ipcMain.on('blabla', (event, arg) => {
+ipcMain.on('process-subtitles', (event, arg) => {
     console.log(arg)
 
-    event.reply('blublu', 'pong do backend index blu')
+    event.reply('process-subtitles', 'pong do backend index process-subtitles')
 })
