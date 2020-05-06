@@ -20,7 +20,10 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import { ipcRenderer } from "electron";
+=======
+>>>>>>> parent of 420dacf... Projeto Electron 06/10 : Utilizando Electron IPC (Inter-Process Communication)
 import Pill from "./Pill";
 
 export default {
@@ -32,6 +35,7 @@ export default {
     }
   },
   methods: {
+<<<<<<< HEAD
     processSubtitles() {
       const paths = this.files.map(f => f.path);
       ipcRenderer.send("process-subtitles", paths);
@@ -39,6 +43,11 @@ export default {
         this.groupedWords = resp
       });
     }
+=======
+      processSubtitles(){
+          console.log(this.files)
+      }
+>>>>>>> parent of 420dacf... Projeto Electron 06/10 : Utilizando Electron IPC (Inter-Process Communication)
   }
 };
 </script>
