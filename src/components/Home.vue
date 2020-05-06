@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import { ipcRenderer } from 'electron';
 import Pill from "./Pill";
 
 export default {
@@ -40,6 +41,11 @@ export default {
   methods: {
       processSubtitles(){
           console.log(this.files)
+
+          ipcRenderer.send('blabla', 'ping')
+          ipcRenderer.on('blabla', (event, resp) =>{
+              console.log(resp)
+          })
       }
   }
 };
